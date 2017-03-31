@@ -576,7 +576,7 @@ CHECK_FOR_OPTION(videodisplay,[
 			APPEND(CXXFLAGS, -I$x_includes)
 		fi
 
-		APPEND(LIBS, [-L$x_libraries -lX11 -lXext])
+		APPEND(LIBS, [-L$x_libraries -lX11 -lX11 -lXext])
 		AC_CHECK_LIB(GL,glDrawPixels, [], [a=1])
 		AC_CHECK_HEADERS(GL/glu.h, [], [a=1])
 		AC_CHECK_LIB(GLU,gluGetString, [], [a=1])
