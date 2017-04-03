@@ -13,9 +13,6 @@
 #ifndef CVD_DISABLE_DC1394V2
     #define CVD_HAVE_DC1394V2 1
 #endif
-#ifndef CVD_DISABLE_DVBUFFER3
-    #define CVD_HAVE_DVBUFFER3 1
-#endif
 #ifndef CVD_DISABLE_FENV_H
     #define CVD_HAVE_FENV_H 1
 #endif
@@ -63,9 +60,6 @@
 #endif
 #ifndef CVD_DISABLE_V4L2BUFFER
     #define CVD_HAVE_V4L2BUFFER 1
-#endif
-#ifndef CVD_DISABLE_V4LBUFFER
-    #define CVD_HAVE_V4LBUFFER 1
 #endif
 #ifndef CVD_DISABLE_VIDEODISPLAY
     #define CVD_HAVE_VIDEODISPLAY 1

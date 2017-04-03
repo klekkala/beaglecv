@@ -111,7 +111,7 @@ CVD_OBJS=   \
 			cvd_src/videosource.o                           \
 			cvd_src/connected_components.o                  \
 			cvd_src/cvd_timer.o                             \
-			cvd_src/i686/yuv411_to_stuff_MMX_64.o cvd_src/SSE2/half_sample.o cvd_src/noarch/convert_rgb_to_y.o cvd_src/i686/convolve_gaussian.o cvd_src/i686/gradient.o cvd_src/noarch/yuv420p_to_rgb_runner.o cvd_src/noarch/yuv422_wrapper.o cvd_src/i686/median_3x3.o cvd_src/i686/utility_float.o cvd_src/i686/utility_byte_differences.o cvd_src/i686/utility_double_int.o cvd_src/SSE2/two_thirds_sample.o cvd_src/fast/fast_7_detect.o cvd_src/fast/fast_7_score.o cvd_src/slower_corner_7.o cvd_src/fast/fast_8_detect.o cvd_src/fast/fast_8_score.o cvd_src/slower_corner_8.o cvd_src/fast/fast_9_detect.o cvd_src/fast/fast_9_score.o cvd_src/fast_corner_9_nonmax.o cvd_src/fast/fast_10_detect.o cvd_src/fast/fast_10_score.o cvd_src/fast/fast_11_detect.o cvd_src/fast/fast_11_score.o cvd_src/slower_corner_11.o cvd_src/fast/fast_12_detect.o cvd_src/fast/fast_12_score.o cvd_src/SSE2/faster_corner_9.o cvd_src/SSE2/faster_corner_10.o cvd_src/SSE2/faster_corner_12.o cvd_src/Linux/dvbuffer3_dc1394v2.o cvd_src/videosource_dvbuffer.o cvd_src/Linux/videosource_nov4l1buffer.o cvd_src/Linux/v4lbuffer.o cvd_src/Linux/videosource_v4lbuffer.o cvd_src/Linux/v4l2buffer.o cvd_src/Linux/v4lcontrol.o cvd_src/OSX/videosource_noqtbuffer.o cvd_src/posix/get_time_of_day_ns.o cvd_src/synchronized.o cvd_src/eventobject.o cvd_src/thread.o cvd_src/posix/sched_yield.o cvd_src/noarch/posix_memalign.o cvd_src/videodisplay.o cvd_src/glwindow.o cvd_src/gltext.o cvd_src/image_io/jpeg.o cvd_src/image_io/tiff.o cvd_src/image_io/tiffwrite.o cvd_src/image_io/png.o cvd_src/videosource_novideofilebuffer.o cvd_src/globlist.o 
+			
 
 ################################################################################
 #
@@ -218,8 +218,8 @@ endif
 LDFLAGS =  -L.
 LOADLIBES = -ltiff -ljpeg -lpng -lpng -llapack -lGLU -lGL -lrt -ldc1394  -pthread -L -lX11 -lX11 -lXext
 
-PROGS=progs/cvd_display_image progs/video_play_source  
-TESTPROGS=test/diskbuffer2 test/test_images test/v4lbuffer_mono test/v4lbuffer_bayerrgb test/v4l2buffer test/font test/bayer_test 
+PROGS= 
+TESTPROGS=
 
 $(PROGS):$(soname)
 $(TESTPROGS):$(soname)
